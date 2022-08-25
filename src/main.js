@@ -11,5 +11,6 @@ new Vue({
   router,
   store,
   vuetify,
+  linkExactActiveClass:"link--active",
   render: h => h(App)
 }).$mount('#app')

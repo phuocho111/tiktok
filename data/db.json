@@ -1,0 +1,88 @@
+{
+  "user": [
+    {
+      "userId": "nghien.setups",
+      "id": 1,
+      "title": "3 cách để góc Setup của bạn",
+      "status":"setup",
+      "video":"../src/assets/video/3 cách để góc Setup của bạn.mp4",
+      "image":"https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/b10fabd003db5362edea1fc07745123e~c5_100x100.jpeg?x-expires=1661414400&x-signature=zXsMA%2BGnIegu16%2Fi9ScD12jwDNU%3D"
+    },
+    {
+      "userId": "bayashi",
+      "id": 2,
+      "title": "tiktok food",
+      "status":"バヤシ",
+      "video": 111,
+      "image": "https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/98cb5a941c6ae617e9f0ce13a76178bc.jpeg?x-expires=1661414400&x-signature=GadD6flfnuepptdWZ8oqJfrS0P0%3D"
+    },
+    {
+      "userId": "datdo0803",
+      "id": 3,
+      "title": "làm em út trong nhà kiểu",
+      "status":"đỗ đạt",
+      "video":111,
+      "image":"https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/b9e1fb6031f81c5eb0d63a9dbbb1da27~c5_100x100.jpeg?x-expires=1661414400&x-signature=KVcSJIevI70lO2uW%2FLKHWLa%2FAtQ%3D"
+    },
+    {
+      "userId": "longkhoahoc",
+      "id":4,
+      "title": "khám phá đồ ăn quân đội mỹ",
+      "status":"Long Khoa Hoc",
+      "video": 111,
+      "image":"https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/ae479da368501e8aaa52a3b7803f02b2~c5_100x100.jpeg?x-expires=1661414400&x-signature=iOpW4%2FGJ48o3cCx0RmQw92M5qZk%3D"
+    }
+    
+  ],
+  "menu_item":[
+    {
+    "title":"English",
+    "id":1,
+    "icon":"mdi-angularjs",
+    "languages":{
+      "title":"Languages",
+      "data":[
+        {
+          "type": "language",
+          "code":"en",
+          "title":"English"
+        },
+        {
+         "type":"language",
+          "code":"vi",
+          "title":"Tiếng Việt"
+        }
+        
+      ]
+    }
+  },
+  {
+    "title":"Feelback",
+    "id":2,
+    "icon":"mdi-help-circle-outline"
+  },
+  {
+    "title":"keyBoard Shotcut",
+    "id":3,
+    "icon":"mdi-keyboard-outline"
+  }
+  ],
+  "Suggested":[
+    {
+      "name":"manhtienkhoi_",
+      "status": "Mạnh Tiến Khôi 🐯",
+      "Followers":"4.5M",
+      "Likes":"296M",
+      "image":"https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/8a97ef3da44f0b2c4962a2ca835220de~c5_100x100.jpeg?x-expires=1661583600&x-signature=0WqSrsvr98VRFoNev7NfUpPnPSY%3D"
+    },
+    {
+      "name":"theanh28entertainment",
+      "status":"Theanh28 Entertainment",
+      "Followers":"7M",
+      "Likes":"451.8M",
+      "image":"https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/65d3c6b1d1e205c75536ccf1f26d552d~c5_100x100.jpeg?x-expires=1661583600&x-signature=DRre69soBWTEnfXV7GVN032Ah4o%3D"
+    }
+  ]
+
+  
+}
