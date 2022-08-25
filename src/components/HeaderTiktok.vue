@@ -52,11 +52,11 @@
         </div>
         <div  v-for="item in userSearch" :key="item.userId">
           
-          <div class="d-flex justify-start align-center py-2" >
+          <div class="d-flex justify-start align-start py-2" >
             <img :src="item.image" alt="" class="rounded-circle mx-4"  width="40" />
             <span>
-              <h4 style="font-size:15px;">{{item.userId}}</h4>
-              <p style="font-size:15px; color: rgba(22, 24, 35, 0.75); margin:  0;" >{{item.status}}</p>
+              <h4 style="font-size:15px">{{item.userId}}</h4>
+              <p style="font-size:15px; color: rgba(22, 24, 35, 0.75);margin: 0;" >{{item.status}}</p>
             </span>
             
           </div>
@@ -191,7 +191,7 @@ export default {
     }
   },
   computed: {
-    //Search Title
+    // Search Title
     matchSearch() {
         let searchRes = null;
       if (this.data && this.search != "") {
@@ -203,7 +203,7 @@ export default {
       }
       return searchRes;
     },
-    // Search Accounts
+    // Search Account
     userSearch() {
       let userRes = null;
       if(this.data && this.search != "") {

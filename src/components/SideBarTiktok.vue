@@ -44,12 +44,12 @@
 
              <div class="suggested">
                  <p class="suggested__text">Suggested accounts</p>
-            <div  v-for="item in suggested" :key="item.name">
+            <div  v-for="item in data" :key="item.userId">
           
             <div class="d-flex justify-start align-center py-2" >
                 <img :src="item.image" alt="" class="rounded-circle mx-4"  width="32" style="object-fit: cover;" />
             <span class="">
-                <h4 class="suggested__name">{{item.name}}</h4>
+                <h4 class="suggested__name">{{item.userId}}</h4>
                 <p class="suggested__status" >{{item.status}}</p>
             </span>
             
@@ -97,13 +97,13 @@
                 }
 
             ],
-            suggested:null
+            data:null
         }
      },
      created(){
         const fetchData = async () => {
-      this.suggested = await (
-        await fetch("http://localhost:3000/Suggested")
+      this.data = await (
+        await fetch("http://localhost:3000/user")
       ).json();
     };
         fetchData();
