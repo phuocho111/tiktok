@@ -1,21 +1,21 @@
 <template>
   <v-container >
   
-    <v-row class="align-center justify-center" style="box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);" >
-      <v-col cols="2" >
+    <v-row class="align-center justify-center" style="box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);position: fixed;width: 80%;align-items: center; background: rgba(255, 255, 255, 1.0);z-index: 1000;" >
+      <v-col cols="3" class="">
         <!-- icon tiktok -->
         <v-img
           :src="require('../assets/tiktok.svg')"
           width="118"
           height="28"
-          
+          style="margin-left:60px" 
         ></v-img>
         <!-- icon tiktok -->
       </v-col>
 
       <!-- form Search -->
       <v-col cols="3" >
-        <v-toolbar style="background:rgba(22, 24, 35, 0.06)" height="46" width="361" class="rounded-pill mx-auto">
+        <v-toolbar style="background:rgba(22, 24, 35, 0.06)" height="46" width="361" class="rounded-pill mx-auto pa-auto">
           <v-text-field 
           clearable
           placeholder="Search account and videos"
@@ -33,9 +33,9 @@
           </v-btn>
         </v-toolbar>
               <!-- title Search -->
-  <v-card  class="overflow-y-auto mx-auto " 
-    style="margin:20px ;position: absolute; left: 41%;" 
-    max-height="500" width="355"  >
+        <v-card  class="overflow-y-auto mx-auto " 
+          style="margin:20px ;position: absolute; left: 41%;" 
+          max-height="500" width="355"  >
             <div  v-for="item in matchSearch" :key="item.title" class="ma-4 d-flex align-center">
               
               <v-icon style="font-size:16px; color:#000">mdi-magnify</v-icon>
@@ -92,11 +92,11 @@
         <!-- menu -->
 
               <div>
-              <v-btn icon plain class="mx-5" 
-              style="border-style:none"
-              @mouseover="handleMouseOver" @mouseleave="handleMouseOut"> 
+              <div icon plain class="mx-5 pt-2" 
+                style="border-style:none; height: 40px;cursor: pointer;"
+                @mouseover="handleMouseOver" @mouseleave="handleMouseOut"> 
               <v-icon >mdi-dots-vertical</v-icon>
-             <div :hidden="hidden" style="position:absolute; right:0; top:30px;  background-color:white"  >
+                <div :hidden="hidden" style="position:absolute; right:0; top:40px;  background-color:white"  >
                 <div 
                 v-for="list in menuItem" :key="list.id"
                 class="d-flex flex-column  " 
@@ -114,7 +114,7 @@
                   
                 </div>
               </div>
-              </v-btn>
+              </div>
               
               </div>
             

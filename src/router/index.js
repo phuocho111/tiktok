@@ -7,7 +7,7 @@ import homeTiktok from '../components/homeTiktok.vue'
 Vue.use(VueRouter)
 
 const routes = [
- 
+  
  
   {
     path:'/homeTiktok',
@@ -19,6 +19,7 @@ const routes = [
     name:'ForYouTiktok',
     icon:"mdi-home-outline",
     component:()=>(import('../components/ForYouTiktok.vue'))
+    
   },
   {
     path:'/following',

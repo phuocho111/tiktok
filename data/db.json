@@ -5,9 +5,17 @@
       "id": 1,
       "title": "3 cách để góc Setup của bạn",
       "status":"setup",
-      "video":"../src/assets/video/3 cách để góc Setup của bạn.mp4",
+      "video":"https://v16-webapp.tiktok.com/6776d6d5c79c1775d99eefb851869e47/630dd564/video/tos/useast2a/tos-useast2a-pve-0037-aiso/7339c3b2d3f9408ea96a7fa7ba161cd9/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=2578&bt=1289&cs=0&ds=3&ft=eXd.6Hk_Myq8Zlg2-he2N7ZQml7Gb&mime_type=video_mp4&qs=0&rc=aTs4aDw7PDNpaDY8ZjU8OUBpMzdxazg6ZnI2ZTMzZjgzM0BhM2JfL2AxXzAxLi5fXi8wYSM2LV9fcjRfMy1gLS1kL2Nzcw%3D%3D&l=202208300315190102510041721001E6E5&btag=80000",
       "like":"255M",
-      "Followers":"15M",
+      "music":"FEEL THE GROOVE - Queens Road, Fabian Graetz",
+      "Followers":"12M",
+      "share":"30",
+      "followers": {
+        "follow":"15M",
+        "userId": "nghien.setups",
+        "status":"setup",
+        "image":"https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/b10fabd003db5362edea1fc07745123e~c5_100x100.jpeg?x-expires=1661414400&x-signature=zXsMA%2BGnIegu16%2Fi9ScD12jwDNU%3D"
+      },
       "image":"https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/b10fabd003db5362edea1fc07745123e~c5_100x100.jpeg?x-expires=1661414400&x-signature=zXsMA%2BGnIegu16%2Fi9ScD12jwDNU%3D"
     },
     {
@@ -15,9 +23,17 @@
       "id": 2,
       "title": "tiktok food",
       "status":"バヤシ",
-      "video": 111,
+      "video": "https://v16-webapp.tiktok.com/0c1fb94463351cd2ca6af7b8ee547133/630dd570/video/tos/alisg/tos-alisg-pve-0037/fbd9e24994f54d979f612b516456b237/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=3818&bt=1909&cs=0&ds=3&ft=eXd.6Hk_Myq8Zng2-he2NaGQml7Gb&mime_type=video_mp4&qs=0&rc=ZWVlNWU8NWRpOzk4OGdmaUBpajw3dmQ6Zng3ZTMzODgzNEBjMmEvMi0wNjMxMjAvYmA2YSMuMmZqcjQwXmdgLS1kLy1zcw%3D%3D&l=202208300315470102450220262201BCA8&btag=80000",
       "like":"545M",
-      "Followers":"50M",
+      "share":"163",
+      "music":"nhạc nền - RESPECT 🙏",
+      "Followers":"5M",
+      "followers": {
+        "follow":"15M",
+        "userId": "bayashi",
+        "status":"バヤシ",
+        "image":"https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/b10fabd003db5362edea1fc07745123e~c5_100x100.jpeg?x-expires=1661414400&x-signature=zXsMA%2BGnIegu16%2Fi9ScD12jwDNU%3D"
+      },
       "image": "https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/98cb5a941c6ae617e9f0ce13a76178bc.jpeg?x-expires=1661414400&x-signature=GadD6flfnuepptdWZ8oqJfrS0P0%3D"
     },
     {
@@ -25,38 +41,47 @@
       "id": 3,
       "title": "làm em út trong nhà kiểu",
       "status":"đỗ đạt",
-      "video":111,
+      "video":"https://v16-webapp.tiktok.com/4216d28ec4fed203a40744f3d73d38b6/630dd50e/video/tos/useast2a/tos-useast2a-pve-0037-aiso/226d8ecc2e984b55bda9466ee7b32a96/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=2012&bt=1006&cs=0&ds=3&ft=eXd.6Hk_Myq8ZBm2-he2NxTwml7Gb&mime_type=video_mp4&qs=0&rc=ZWlpNTw7ZjxkZzo4ZWg8OEBpam83bzg6ZnI7ZTMzZjgzM0AuLjUvL2IuXl8xLjFfYmAwYSNkcm5qcjRfM2tgLS1kL2Nzcw%3D%3D&l=2022083003143801024514420000019310&btag=80000",
       "like":"245M",
+      "share":"2333",
+      "music":"nhạc nền - Sky M-TP",
       "Followers":"5M",
       "image":"https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/b9e1fb6031f81c5eb0d63a9dbbb1da27~c5_100x100.jpeg?x-expires=1661414400&x-signature=KVcSJIevI70lO2uW%2FLKHWLa%2FAtQ%3D"
     },
     {
-      "userId": "longkhoahoc",
+      "userId": "duythamchannel",
       "id":4,
-      "title": "khám phá đồ ăn quân đội mỹ",
-      "status":"Long Khoa Hoc",
-      "video": 111,
-      "like":"145M",
-      "Followers":"4M",
-      "image":"https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/ae479da368501e8aaa52a3b7803f02b2~c5_100x100.jpeg?x-expires=1661414400&x-signature=iOpW4%2FGJ48o3cCx0RmQw92M5qZk%3D"
+      "title": "Cảm xúc anh em Schannel khi nhận thiệp cưới Duy Thẩm ",
+      "status":"Duy Thẩm",
+      "video": "https://v16-webapp.tiktok.com/0cc5416eb5e8632fdb360a0339509c8d/630dd5c0/video/tos/useast2a/tos-useast2a-pve-0037c001-aiso/f5bc5ad332a640659850723d6209325a/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=3176&bt=1588&cs=0&ds=3&ft=eXd.6Hk_Myq8Z0g2-he2Nz2Qml7Gb&mime_type=video_mp4&qs=0&rc=NmZmNTg8aTQ8MzNpOjVpNkBpMzRmZGk6ZnUzZTMzZjgzM0AyLy0yYl9gNi0xM182M2AuYSNocW5zcjRfcnNgLS1kL2Nzcw%3D%3D&l=202208300316080102451442002101860E&btag=80000",
+      "like":"135.3M",
+      "share":"245",
+      "music":"I'm So Pretty - chunkymonkeeyy",
+      "Followers":"3.9M",
+      "image":"https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tiktok-obj/1665757201241090.jpeg?x-expires=1661907600&x-signature=W1PTTKRQ7TqPFfrsSf3ufM%2FEDhg%3D"
     },
     {
       "userId":"manhtienkhoi_",
       "id":5,
-      "title": "",
+      "title": "Saya akan kembali ke Vietn",
       "status": "Mạnh Tiến Khôi 🐯",
-      "video": 111,
+      "video": "https://v16-webapp.tiktok.com/babf228a35ad3db053d0fe947800f716/630c9785/video/tos/useast2a/tos-useast2a-pve-0037c001-aiso/33c7df2721d5437b8bec0a020d89ef88/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=2332&bt=1166&cs=0&ds=3&ft=eXd.6Hk_Myq8ZwKd-he2NllQml7Gb&mime_type=video_mp4&qs=0&rc=OzQ6OjY6PGkzOjs5NTQ6NkBpandmPDw6ZmZvZjMzZjgzM0AwNF5iYjEyXl8xYS0zLTA0YSNnaWsucjRnLTJgLS1kL2Nzcw%3D%3D&l=2022082904395401024515710600A1C79E&btag=80000",
       "Followers":"4.5M",
-      "Likes":"296M",
+      "like":"296M",
+      "share":"1110",
+      "music":"nhạc nền - Khoảnh Khắc Đẹp",
       "image":"https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/8a97ef3da44f0b2c4962a2ca835220de~c5_100x100.jpeg?x-expires=1661583600&x-signature=0WqSrsvr98VRFoNev7NfUpPnPSY%3D"
     },
     {
       "userId":"theanh28entertainment",
       "id":6,
-      "title": "",
+      "title": "VÀO XIN VÍA NÀO CHỊ EM ",
       "status":"Theanh28 Entertainment",
+      "video":"https://v16-webapp.tiktok.com/017a26b7da007298bff2259b2ca47911/630dd5b9/video/tos/alisg/tos-alisg-pve-0037/f9ea2b3516d94dd2a0b4f7307b475a25/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=2706&bt=1353&cs=0&ds=3&ft=eXd.6Hk_Myq8Z7s2-he2Norhml7Gb&mime_type=video_mp4&qs=0&rc=ODhpNTc5ZTxnOzg2aWVoaUBpanI5NDs6ZnA7ZjMzODgzNEBjMWJiLzMxXjYxXjM2My9gYSNyaDMucjRnZTNgLS1kLy1zcw%3D%3D&l=202208300316320102452410022301B8AD&btag=80000",
       "Followers":"7M",
-      "Likes":"451.8M",
+      "like":"451.8M",
+      "share":"111",
+      "music":"original sound - How Ridiculous Fan",
       "image":"https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/65d3c6b1d1e205c75536ccf1f26d552d~c5_100x100.jpeg?x-expires=1661583600&x-signature=DRre69soBWTEnfXV7GVN032Ah4o%3D"
     }
     
@@ -93,6 +118,48 @@
     "id":3,
     "icon":"mdi-keyboard-outline"
   }
+  ],
+  "discover":[
+    {
+      "title":"suthatla",
+      "icon":"#"
+    },
+    {
+      "title":"mackedoi",
+      "icon":"#"
+    },
+    {
+      "title":"sansangthaydoi",
+      "icon":"#"
+    },
+    {
+      "title":"Yêu Đơn Phương Là Gì (MEE Remix)",
+      "icon":"mdi-music"
+    },
+    {
+      "title":"Về Nghe Mẹ Ru NSND Bach Tuyet",
+      "icon":"mdi-music"
+    },
+    {
+      "title":"Thiên Thần Tình Yêu - RICKY STAR",
+      "icon":"mdi-music"
+    },
+    {
+      "title":"7749hieuung",
+      "icon":"#"
+    },
+    {
+      "title":"genzlife",
+      "icon":"#"
+    },
+    {
+      "title":"Tình Đã Đầy Một Tim - Huyền Tâm Môn",
+      "icon":"mdi-music"
+    },
+    {
+      "title":"Thằng Hầu (Thái Hoàng Remix) [Short Versi...",
+      "icon":"mdi-music"
+    }
   ]
   
 
