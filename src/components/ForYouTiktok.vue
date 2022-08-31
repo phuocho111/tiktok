@@ -2,8 +2,9 @@
   <v-container>
     <v-row style="margin-top: 20px;">
       <v-col >
-        <div v-for="item in data" :key="item.id" class="mainContainer">
+        <div v-for="item in allData" :key="item.id" class="mainContainer">
           <div class="itemContainer">
+            <!-- Avatar -->
             <a href="">
               <div class="itemContain__avatar">
                 
@@ -11,14 +12,20 @@
                 
               </div>
             </a>
+            <!-- Avatar -->
+            
             <div class="contentContainer">
+              <!-- info user -->
               <div class="textInfoContainer">
                 <div class="textInfoContainer__name">
                   <a></a>
                   <h3 class="textInfoContainer__name__h3">{{item.userId}}</h3>
                   <h4 class="textInfoContainer__name__h4">{{item.status}}</h4>
                 </div>
+                <!-- follow button -->
                 <button class="textInfoContainer__button">Follow</button>
+                <!-- follow button -->
+
                 <div class="textInfoContainer__title">
                   <span class="textInfoContainer__title__text">{{item.title}}</span>
                   <h4 class="music-text">
@@ -30,6 +37,7 @@
                 </div>
                 
               </div>
+              <!-- info user -->
                     <!-- video -->
               <div class="videoWrapper">
                    <div class="videoCardContainer">
@@ -38,7 +46,7 @@
                         <source :src="item.video" ></video>
                      </div>
                      <!-- video -->
-                     <!-- button -->
+                     <!-- button like follow share -->
                      <div class="actionItemContainer">
                     <button class="buttonActionItem">
                       <span class=" spanIconWrapper "><v-icon>mdi-heart</v-icon></span>
@@ -53,7 +61,7 @@
                       <strong class="strongText">{{item.share}}</strong>
                     </button>
                    </div>
-                   <!-- button -->
+                   <!-- button like follow share -->
                 </div>
                   
               </div>
@@ -69,6 +77,7 @@
 </template>
 <script>
   import 'material-icons/iconfont/material-icons.css';
+import { mapActions, mapGetters } from 'vuex';
    export default{
     data(){
       return{
@@ -77,18 +86,16 @@
     },
     created(){
         // fetchData
-        const fetchData = async () => {
-      this.data = await (
-        await fetch("http://localhost:3000/user")
-      ).json();
-    };
-        fetchData();
+        
+        this.fetchData();
     },
     methods:{
+      ...mapActions(['fetchData']),
       playPause(){
        
       }
-    }
+    },
+    computed:{...mapGetters(['allData'])}
    }
 </script>
 <style  scoped>
@@ -149,6 +156,7 @@
   line-height: 28px;
 
 }
+/* button follow */
 .textInfoContainer__button{
   border-width: 1px;
   border-style: solid;
@@ -169,12 +177,12 @@
   top: 28px;
   padding: 0 10px;
 }
-.textInfoContainer__button :active{
-    background-color: rgba(254, 44, 85, 0.16);
+.textInfoContainer__button:active{
+    background: rgba(254, 44, 85, 0.16);;
 }
-.textInfoContainer__button:focus{
-  outline: none;
-}
+
+
+/* button follow */
 .textInfoContainer__title{
   font-size: 16px;
   line-height: 22px;
@@ -210,7 +218,7 @@
     border-radius: 8px;
     overflow: hidden;
     margin-right: 20px;
-    height: 500px;
+    height: 600px;
     max-width: 624px;
     display: flex;
     align-items: flex-end;
@@ -238,6 +246,7 @@
   object-fit: cover;
 }
 /* video container */
+
 /* Item like follow share */
 .actionItemContainer{
   display: flex;

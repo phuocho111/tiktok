@@ -52,11 +52,11 @@
              <div class="suggested"  >
                  <p class="suggested__text">Suggested accounts</p>
                  <div   v-for="(item, index) in commentsToShow" :key="index"  @mouseover="handleMouseOver" @mouseleave="handleMouseOut">
-                 <div class="d-flex justify-start align-center py-2 hover" style="cursor: pointer;" v-if="index < data.length" >
-                    <img :src="data[index].image" alt="" class="rounded-circle mx-4"  width="32" style="object-fit: cover;" />
+                 <div class="d-flex justify-start align-center py-2 hover" style="cursor: pointer;" v-if="index < allData.length" >
+                    <img :src="allData[index].image" alt="" class="rounded-circle mx-4"  width="32" style="object-fit: cover;" />
                     <span>
-                    <h4 class="suggested__name">{{data[index].userId}}</h4>
-                    <p class="suggested__status" >{{data[index].status}}</p>
+                    <h4 class="suggested__name">{{allData[index].userId}}</h4>
+                    <p class="suggested__status" >{{allData[index].status}}</p>
                     </span>
                  </div>
                  </div> 
@@ -77,7 +77,7 @@
             <!-- follow -->
                 <div :hidden="hidden" style="position:absolute; right:0; top:40px;  background-color:white"  >
                 <div 
-                v-for="item in data" :key="item.followers?.userId" 
+                v-for="item in allData" :key="item.followers?.userId" 
                 class="d-flex flex-column  " 
                 
                  style="background:#fff; color:#000;box-shadow: 5px 10px 18px  rgb(0 0 0 / 12%); text-align: start;"
@@ -94,7 +94,7 @@
              <div class="discover">
                 <p class="discover__text pb-4 ma-0">Discover</p>
                 <div class="d-flex flex-wrap" >
-                    <div v-for="discover in discovers" :key="discover.title" class="discover__item">
+                    <div v-for="discover in allDiscover" :key="discover.title" class="discover__item">
                         <v-icon class="discover__item__icon">{{discover.icon}}</v-icon>
                         <p class="discover__item__text">{{discover.title}}</p>
                     </div>
@@ -138,7 +138,7 @@
 
             </div>
             </v-col>
-            <v-col cols="6">
+            <v-col cols="7" class="px-0">
                <router-view ></router-view> 
             </v-col>
         </v-row>
@@ -151,6 +151,7 @@
 <script>
    
    import 'material-icons/iconfont/material-icons.css';
+import { mapActions,mapGetters } from 'vuex';
    export default{
      data(){
         return{
@@ -173,9 +174,8 @@
                 }
 
             ],
-            data:[],
+           
             commentsToShow: 3,
-            discovers:null,
             hidden:"true",
             isActive:true,
             see:[]
@@ -186,26 +186,30 @@
      },
      created(){
         // fetchData
-        const fetchData = async () => {
-      this.data = await (
-        await fetch("http://localhost:3000/user")
-      ).json();
-    };
-        fetchData();
+    //     const fetchData = async () => {
+    //   this.data = await (
+    //     await fetch("http://localhost:3000/user")
+    //   ).json();
+    // };
+    //     fetchData();
 
-        // fetchDiscover
-        const fetchDiscover = async () => {
-      this.discovers = await (
-        await fetch("http://localhost:3000/discover")
-      ).json();
-    };
-        fetchDiscover();
+    //     // fetchDiscover
+    //     const fetchDiscover = async () => {
+    //   this.discovers = await (
+    //     await fetch("http://localhost:3000/discover")
+    //   ).json();
+    // };
+    //     fetchDiscover();
+    this.fetchData(),
+    this.fetchDiscover()
      },
      mounted(){
         this.see = "see all"
      },
     
      methods: {
+    ...mapActions(["fetchData","fetchDiscover"]),
+    
     handleMouseOver(){
 
         return this.hidden = false
@@ -217,7 +221,7 @@
     },
     handleSee( see ){
         if(see == "see all"){
-           this.commentsToShow += this.data
+           this.commentsToShow += this.allData
            this.see = "see less"
            
         }else{
@@ -228,17 +232,14 @@
     }
     
   },
-  computed:{
-       
-  }
+  computed: mapGetters(['allData','allDiscover'])
+  
     
    }
 </script>
 <style  scoped>
 
-.container{
 
-}
 /* sidebar */
 
 .out-sidebar{

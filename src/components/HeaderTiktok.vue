@@ -98,7 +98,7 @@
               <v-icon >mdi-dots-vertical</v-icon>
                 <div :hidden="hidden" style="position:absolute; right:0; top:40px;  background-color:white"  >
                 <div 
-                v-for="list in menuItem" :key="list.id"
+                v-for="list in allMenu" :key="list.id"
                 class="d-flex flex-column  " 
                 
                  style="background:#fff; color:#000;box-shadow: 5px 10px 18px  rgb(0 0 0 / 12%); text-align: start;"
@@ -143,37 +143,27 @@
 
 
 <script>
+import { mapActions,mapGetters } from 'vuex';
 export default {
   data() {
     return {
       toggle_multiple: [0, 1, 2],
       search: "",
-      data: null,
-      menuItem:null,
       hidden:"true",
       
       
     };
   },
   created() {
-    const fetchData = async () => {
-      this.data = await (
-        await fetch("http://localhost:3000/user")
-      ).json();
-    };
-    fetchData();
+    
+    this.fetchData;
 
-    const fetchMenu = async ()=>{
-      this.menuItem = await(
-        await fetch("http://localhost:3000/menu_item")
-      ).json()
-    }
-    console.log(this.menuItem)
-    fetchMenu()
+    this.fetchMenu()
   },
 
 
   methods: {
+    ...mapActions(['fetchData','fetchMenu']),
     logref() {
       console.log(this.$refs.search);
     },
@@ -190,13 +180,15 @@ export default {
       
     }
   },
+  
   computed: {
+    ...mapGetters(['allData','allMenu']),
     // Search Title
     matchSearch() {
         let searchRes = null;
-      if (this.data && this.search != "") {
-        searchRes = this.data.filter((item) => {
-            console.log(this.data )
+      if (this.allData && this.search != "") {
+        searchRes = this.allData.filter((item) => {
+            console.log(this.allData )
           return (item.title.includes(this.search))
           
         });
@@ -206,8 +198,8 @@ export default {
     // Search Account
     userSearch() {
       let userRes = null;
-      if(this.data && this.search != "") {
-        userRes = this.data.filter((item)=>{
+      if(this.allData && this.search != "") {
+        userRes = this.allData.filter((item)=>{
           return (item.userId.includes(this.search))
         });
       }

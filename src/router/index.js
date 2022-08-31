@@ -10,7 +10,8 @@ const routes = [
   
  
   {
-    path:'/homeTiktok',
+    path:'/',
+    redirect:'/home',
     name:homeTiktok,
     component:{homeTiktok}
   },
