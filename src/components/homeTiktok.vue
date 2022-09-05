@@ -2,6 +2,7 @@
 <div>
   <HeaderTiktok/>
   <SideBarTiktok/>
+  
 </div>
 
   

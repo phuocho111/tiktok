@@ -138,11 +138,20 @@
 
             </div>
             </v-col>
-            <v-col cols="7" class="px-0">
+
+            <!-- Route -->
+            <v-col cols="6" class="px-0">
                <router-view ></router-view> 
             </v-col>
-        </v-row>
+            <!-- Route -->
             
+
+            <!-- Button Scroll Top -->
+            <v-col cols="1">
+               <ButtonScroll/>
+            </v-col>
+        </v-row>
+            <!-- Button Scroll Top -->
          
        
     </v-container>
@@ -150,9 +159,12 @@
 </template>
 <script>
    
-   import 'material-icons/iconfont/material-icons.css';
+import 'material-icons/iconfont/material-icons.css';
 import { mapActions,mapGetters } from 'vuex';
+import ButtonScroll from './ButtonScroll.vue';
+
    export default{
+    components:{ ButtonScroll },
      data(){
         return{
             route:[
@@ -177,7 +189,8 @@ import { mapActions,mapGetters } from 'vuex';
             commentsToShow: 3,
             hidden:"true",
             isActive:true,
-            see:[]
+            see:[],
+            
             
             
             
@@ -228,7 +241,8 @@ import { mapActions,mapGetters } from 'vuex';
             this.commentsToShow = 3
             
         }
-    }
+    },
+    
     
   },
   computed: {...mapGetters(['allData','allDiscover'])}
@@ -441,6 +455,7 @@ import { mapActions,mapGetters } from 'vuex';
 
 
 /* footer */
+
 
 
 </style>
