@@ -174,7 +174,6 @@ import { mapActions,mapGetters } from 'vuex';
                 }
 
             ],
-           
             commentsToShow: 3,
             hidden:"true",
             isActive:true,
@@ -232,7 +231,7 @@ import { mapActions,mapGetters } from 'vuex';
     }
     
   },
-  computed: mapGetters(['allData','allDiscover'])
+  computed: {...mapGetters(['allData','allDiscover'])}
   
     
    }
