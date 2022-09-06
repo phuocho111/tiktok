@@ -1,3 +1,4 @@
+
 {
   "user": [
     {
@@ -5,17 +6,11 @@
       "id": 1,
       "title": "3 cách để góc Setup của bạn",
       "status":"setup",
-      "video":"https://v16-webapp.tiktok.com/6776d6d5c79c1775d99eefb851869e47/630dd564/video/tos/useast2a/tos-useast2a-pve-0037-aiso/7339c3b2d3f9408ea96a7fa7ba161cd9/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=2578&bt=1289&cs=0&ds=3&ft=eXd.6Hk_Myq8Zlg2-he2N7ZQml7Gb&mime_type=video_mp4&qs=0&rc=aTs4aDw7PDNpaDY8ZjU8OUBpMzdxazg6ZnI2ZTMzZjgzM0BhM2JfL2AxXzAxLi5fXi8wYSM2LV9fcjRfMy1gLS1kL2Nzcw%3D%3D&l=202208300315190102510041721001E6E5&btag=80000",
+      "video":"https://v16-webapp.tiktok.com/4e3e7e2f9266061adf0475a688359427/6316f48a/video/tos/useast2a/tos-useast2a-pve-0037-aiso/6ce7c72a77754a2aba0ad8f0594f127b/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=2648&bt=1324&cs=0&ds=3&ft=eXd.6Hk_Myq8ZCCV~he2Npyhml7Gb&mime_type=video_mp4&qs=0&rc=ODY2NTc5Zjk4NDYzZTxkZUBpMzg6Nzw6ZmlpZTMzZjgzM0BjMGBgYDUtNTAxNjZfMjMzYSMzb14tcjQwaGxgLS1kL2Nzcw%3D%3D&l=20220906011847010245100117004CC36F&btag=80000",
       "like":"255M",
       "music":"FEEL THE GROOVE - Queens Road, Fabian Graetz",
       "Followers":"12M",
       "share":"30",
-      "followers": {
-        "follow":"15M",
-        "userId": "nghien.setups",
-        "status":"setup",
-        "image":"https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/b10fabd003db5362edea1fc07745123e~c5_100x100.jpeg?x-expires=1661414400&x-signature=zXsMA%2BGnIegu16%2Fi9ScD12jwDNU%3D"
-      },
       "image":"https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/b10fabd003db5362edea1fc07745123e~c5_100x100.jpeg?x-expires=1661414400&x-signature=zXsMA%2BGnIegu16%2Fi9ScD12jwDNU%3D"
     },
     {
@@ -23,17 +18,11 @@
       "id": 2,
       "title": "tiktok food",
       "status":"バヤシ",
-      "video": "https://v16-webapp.tiktok.com/0c1fb94463351cd2ca6af7b8ee547133/630dd570/video/tos/alisg/tos-alisg-pve-0037/fbd9e24994f54d979f612b516456b237/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=3818&bt=1909&cs=0&ds=3&ft=eXd.6Hk_Myq8Zng2-he2NaGQml7Gb&mime_type=video_mp4&qs=0&rc=ZWVlNWU8NWRpOzk4OGdmaUBpajw3dmQ6Zng3ZTMzODgzNEBjMmEvMi0wNjMxMjAvYmA2YSMuMmZqcjQwXmdgLS1kLy1zcw%3D%3D&l=202208300315470102450220262201BCA8&btag=80000",
+      "video": "https://v16-webapp.tiktok.com/f768b4e931c84dcd7ec2c557f876ddec/6316f4b7/video/tos/alisg/tos-alisg-pve-0037/12ffc0d05f574a05a5ddcf7a7eca06fc/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=3914&bt=1957&cs=0&ds=3&ft=eXd.6Hk_Myq8Z2ve~he2Nd3Qml7Gb&mime_type=video_mp4&qs=0&rc=NDM8ZjM4OzpoPGg3aGg0aUBpMzxqdWk6Zm90ZTMzODgzNEAxXl8xNjBjNV8xMF5eNTReYSNvazVpcjRfMmtgLS1kLy1zcw%3D%3D&l=20220906011923010245015153144D5E26&btag=80000",
       "like":"545M",
       "share":"163",
       "music":"nhạc nền - RESPECT 🙏",
       "Followers":"5M",
-      "followers": {
-        "follow":"15M",
-        "userId": "bayashi",
-        "status":"バヤシ",
-        "image":"https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/b10fabd003db5362edea1fc07745123e~c5_100x100.jpeg?x-expires=1661414400&x-signature=zXsMA%2BGnIegu16%2Fi9ScD12jwDNU%3D"
-      },
       "image": "https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/98cb5a941c6ae617e9f0ce13a76178bc.jpeg?x-expires=1661414400&x-signature=GadD6flfnuepptdWZ8oqJfrS0P0%3D"
     },
     {
@@ -53,7 +42,7 @@
       "id":4,
       "title": "Cảm xúc anh em Schannel khi nhận thiệp cưới Duy Thẩm ",
       "status":"Duy Thẩm",
-      "video": "https://v16-webapp.tiktok.com/0cc5416eb5e8632fdb360a0339509c8d/630dd5c0/video/tos/useast2a/tos-useast2a-pve-0037c001-aiso/f5bc5ad332a640659850723d6209325a/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=3176&bt=1588&cs=0&ds=3&ft=eXd.6Hk_Myq8Z0g2-he2Nz2Qml7Gb&mime_type=video_mp4&qs=0&rc=NmZmNTg8aTQ8MzNpOjVpNkBpMzRmZGk6ZnUzZTMzZjgzM0AyLy0yYl9gNi0xM182M2AuYSNocW5zcjRfcnNgLS1kL2Nzcw%3D%3D&l=202208300316080102451442002101860E&btag=80000",
+      "video": "https://v16-webapp.tiktok.com/5ef52512742dbebf2559baaad8111541/6316f513/video/tos/useast2a/tos-useast2a-pve-0037c001-aiso/f5bc5ad332a640659850723d6209325a/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=3176&bt=1588&cs=0&ds=3&ft=eXd.6Hk_Myq8Zrre~he2Nuchml7Gb&mime_type=video_mp4&qs=0&rc=NmZmNTg8aTQ8MzNpOjVpNkBpMzRmZGk6ZnUzZTMzZjgzM0AyLy0yYl9gNi0xM182M2AuYSNocW5zcjRfcnNgLS1kL2Nzcw%3D%3D&l=20220906012011010245241015234C97A1&btag=80000",
       "like":"135.3M",
       "share":"245",
       "music":"I'm So Pretty - chunkymonkeeyy",

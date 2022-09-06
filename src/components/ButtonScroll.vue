@@ -30,7 +30,7 @@
                 if(window.scrollY === 0){
                     clearInterval(this.scrollTop)
                 }
-                window.scroll(0, window.scrollY -100)
+                window.scroll(0, window.scrollY - 100)
                 },20)
             }
         }

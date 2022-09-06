@@ -51,14 +51,15 @@
 
              <div class="suggested"  >
                  <p class="suggested__text">Suggested accounts</p>
-                 <div   v-for="(item, index) in commentsToShow" :key="index"  @mouseover="handleMouseOver" @mouseleave="handleMouseOut">
-                 <div class="d-flex justify-start align-center py-2 hover" style="cursor: pointer;" v-if="index < allData.length" >
+                 <div   v-for="(item, index) in commentsToShow" :key="index"  @mouseover="handleMouseOver(index)" @mouseleave="handleMouseOut(index)">
+                 <div class="d-flex justify-start align-center py-2 hover suggested__form"  v-if="index < allData.length" >
                     <img :src="allData[index].image" alt="" class="rounded-circle mx-4"  width="32" style="object-fit: cover;" />
                     <span>
                     <h4 class="suggested__name">{{allData[index].userId}}</h4>
                     <p class="suggested__status" >{{allData[index].status}}</p>
                     </span>
                  </div>
+                 
                  </div> 
                  <!-- see all button -->
                  <div class="mt-2 px-2">
@@ -75,16 +76,26 @@
             
             
             <!-- follow -->
-                <div :hidden="hidden" style="position:absolute; right:0; top:40px;  background-color:white"  >
+            <div :hidden="hidden" class="follow-itemHover"  >
                 <div 
-                v-for="item in allData" :key="item.followers?.userId" 
-                class="d-flex flex-column  " 
-                
-                 style="background:#fff; color:#000;box-shadow: 5px 10px 18px  rgb(0 0 0 / 12%); text-align: start;"
-                >
-                  <div v-if="item.followers?.userId === item.userId">
-                    {{item.followers?.userId}}
+                 
+               >
+                  <div class="itemHover">
+                    <div class="itemHover__avatar">
+                        <img :src="itemHover?.image" alt="">
+                    </div>
+                    <div class="itemHover__text">
+                        <h3>{{itemHover?.userId}}</h3>
+                        <p>{{itemHover?.status}}</p>
+                    </div>
+                    <div class="itemHover__info">
+                        <p class="itemHover__info__follower"><span>{{itemHover?.Followers}}</span>Followers</p>
+                        <p class="itemHover__info__like"><span>{{itemHover?.like}}</span>Likes</p>
+                    </div>
                   </div>
+                  <button  class="itemHover__button" >
+                    <p class="itemHover__button-follow">Follow</p>
+                  </button>
                 </div>
                 </div> 
                 <!-- follow --> 
@@ -189,6 +200,7 @@ import ButtonScroll from './ButtonScroll.vue';
             commentsToShow: 3,
             hidden:"true",
             isActive:true,
+            itemHover:{},
             see:[],
             
             
@@ -222,14 +234,17 @@ import ButtonScroll from './ButtonScroll.vue';
      methods: {
     ...mapActions(["fetchData","fetchDiscover"]),
     
-    handleMouseOver(){
+    handleMouseOver(index){
+        this.itemHover = this.allData[index]
+        console.log(this.itemHover);
 
         return this.hidden = false
        
     },
-    handleMouseOut(){
-      
-          return this.hidden = true
+    handleMouseOut(index){
+        let itemHover = this.allData[index]
+         this.hidden = true
+         return itemHover
     },
     handleSee( see ){
         if(see == "see all"){
@@ -245,7 +260,8 @@ import ButtonScroll from './ButtonScroll.vue';
     
     
   },
-  computed: {...mapGetters(['allData','allDiscover'])}
+  computed: {...mapGetters(['allData','allDiscover'])
+        }
   
     
    }
@@ -349,6 +365,7 @@ import ButtonScroll from './ButtonScroll.vue';
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
+   position: relative;
 }
 
 .suggested__text{
@@ -356,6 +373,10 @@ import ButtonScroll from './ButtonScroll.vue';
     margin-bottom: 8px;
     font-size: 14px;
     line-height: 20px;
+}
+.suggested__form{
+    cursor: pointer;
+    position: relative;
 }
 .suggested__name{
     color: rgb(22, 24, 35);
@@ -455,7 +476,67 @@ import ButtonScroll from './ButtonScroll.vue';
 
 
 /* footer */
+/* itemHover */
+.follow-itemHover{
+    position:absolute;
+     right:30px; 
+    top: 440px;
+     background-color:white;
+     z-index: 100;
+     width: 300px;
+     box-sizing: border-box;
+     
+     
+}
+.itemHover{
+    background:#fff; 
+    border-radius: 10px;
+    color:#000;
+    box-shadow: 5px 10px 18px  rgb(0 0 0 / 12%); 
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    padding:20px
+    
+}
+.itemHover__avatar img{
+   width: 50px;
+   border-radius: 50px;
+}
 
+.itemHover__info{
+   display: flex;
+   flex-direction: row;
+}
+.itemHover__info p{
+    padding-right: 10px;
+    margin: 0;
+}
+.itemHover__info p span{
+    font-weight: 600;
+    padding-right: 5px;
+}
+.itemHover__button{
+    background-color:rgba(254, 44, 85, 1.0);    
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.itemHover__button-follow{
+    
+    color:rgba(255, 255, 255, 1.0); 
+    
+    margin: auto;
+
+    
+}
+
+/* itemHover */
 
 
 </style>
