@@ -96,27 +96,38 @@
                 style="border-style:none; height: 40px;cursor: pointer;"
                 @mouseover="handleMouseOver" @mouseleave="handleMouseOut"> 
               <v-icon >mdi-dots-vertical</v-icon>
-                <div :hidden="hidden" style="position:absolute; right:0; top:40px;  background-color:white"  >
+                <div :hidden="hidden" style="position:absolute; right:0; top:40px; padding-top: 10px;  background-color:white"  >
                 <div 
                 v-for="list in allMenu" :key="list.id"
-                class="d-flex flex-column  " 
-                
-                 style="background:#fff; color:#000;box-shadow: 5px 10px 18px  rgb(0 0 0 / 12%); text-align: start;"
-                >
-                  <div
-                  class="ma-3"     
-                  >
-                  <button><v-icon class="mr-2">{{list.icon}}</v-icon>{{list.title}}</button>
-
-                  
+                class="d-flex flex-column   " 
+                style="background:#fff; color:#000;box-shadow: 5px 10px 18px  rgb(0 0 0 / 12%); text-align: start;">
+                  <div class="pa-3 hover">
+                  <button @click="handleClick(list)" ><v-icon class="mr-2">{{list.icon}}</v-icon>{{list.title}}</button>
                   </div>
-                  
                   
                 </div>
               </div>
-              </div>
               
+
+              <!-- languages -->
+              <div :hidden="hidden"   style="position:absolute; right:0; top:40px;  background-color:white"  >
+                <div 
+                class="d-flex flex-column " >
+                  <div class=" language" :hidden="on">
+                  <div  class="language-title" >
+                    <span class="material-icons" @click="onTrue">arrow_back_ios</span>
+                    {{language.title}}</div>
+                  <div class="language-languages hover" v-for="i in language.languages" :key="i.title">
+
+                    <button class="language-text ">{{i.title}}</button>
+                  </div>
+                  </div>
+                  
+                </div>
               </div>
+              <!-- languages -->
+              </div>
+            </div>
             
 
         </v-btn-toggle>
@@ -143,6 +154,7 @@
 
 
 <script>
+import 'material-icons/iconfont/material-icons.css';
 import { mapActions,mapGetters } from 'vuex';
 export default {
   data() {
@@ -150,13 +162,14 @@ export default {
       toggle_multiple: [0, 1, 2],
       search: "",
       hidden:"true",
-      
+      language:"",
+      on:true
       
     };
   },
   created() {
     
-    this.fetchData;
+    this.fetchData();
 
     this.fetchMenu()
   },
@@ -169,15 +182,28 @@ export default {
     },
     handleMouseOver(){
        
-        return this.hidden = false
+         this.hidden = false
+
        
     },
     handleMouseOut(){
       
-          return this.hidden = true
-      
-       
-      
+           this.hidden = true
+           this.on = true
+    },
+    handleClick(list){
+        
+          if(list){
+            const languages = list.childrent
+          console.log(languages)
+          this.on = false
+            return this.language = languages  
+          }else{
+            console.log(list)
+          }
+    },
+    onTrue(){
+      this.on = true
     }
   },
   
@@ -211,3 +237,39 @@ export default {
   },
 };
 </script>
+<style scoped>
+.hover:hover{
+    background-color: rgba(22, 24, 35, 0.03);
+    width: 100%;
+    height: 100%;
+}
+/* languages */
+.language{
+  padding-top:10px ;
+  background:#fff;
+  color:#000;
+  box-shadow: 5px 10px 18px  rgb(0 0 0 / 12%);
+}
+.language-title{
+  text-align: center;
+  width: 200px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.material-icons{
+  font-size: 18px;
+  margin-right:30px ;
+  position: absolute;
+  left: 20px;
+  top: 2px;
+}
+.language-languages{
+  text-align: start;
+  padding: 10px 15px;
+}
+.language-text{
+
+}
+
+/* languages */
+</style>

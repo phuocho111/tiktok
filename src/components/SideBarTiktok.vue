@@ -235,8 +235,9 @@ import ButtonScroll from './ButtonScroll.vue';
     ...mapActions(["fetchData","fetchDiscover"]),
     
     handleMouseOver(index){
+
         this.itemHover = this.allData[index]
-        console.log(this.itemHover);
+        // console.log(this.itemHover);
 
         return this.hidden = false
        
@@ -377,6 +378,7 @@ import ButtonScroll from './ButtonScroll.vue';
 .suggested__form{
     cursor: pointer;
     position: relative;
+    z-index: 99;
 }
 .suggested__name{
     color: rgb(22, 24, 35);
