@@ -295,6 +295,7 @@ import { mapActions, mapGetters } from 'vuex';
     margin-top: 8px;
     margin-bottom: 6px;
 }
+
 .strongText{
   color: rgba(22, 24, 35, 0.75);
     font-size: 12px;

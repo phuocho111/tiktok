@@ -101,8 +101,8 @@
                 v-for="list in allMenu" :key="list.id"
                 class="d-flex flex-column   " 
                 style="background:#fff; color:#000;box-shadow: 5px 10px 18px  rgb(0 0 0 / 12%); text-align: start;">
-                  <div class="pa-3 hover">
-                  <button @click="handleClick(list)" ><v-icon class="mr-2">{{list.icon}}</v-icon>{{list.title}}</button>
+                  <div class="pa-3 hover" @click="handleClick(list)" >
+                  <button ><v-icon class="mr-2">{{list.icon}}</v-icon>{{list.title}}</button>
                   </div>
                   
                 </div>
@@ -267,9 +267,7 @@ export default {
   text-align: start;
   padding: 10px 15px;
 }
-.language-text{
 
-}
 
 /* languages */
 </style>

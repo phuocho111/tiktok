@@ -174,4 +174,8 @@ import { mapActions, mapGetters } from 'vuex';
     cursor: pointer;
     box-sizing: border-box;
 }
+.button-follow:active{
+  color:  rgb(254, 44, 85);
+  background-color:rgb(255, 255, 255); ;
+}
 </style>

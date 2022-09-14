@@ -537,6 +537,14 @@ import ButtonScroll from './ButtonScroll.vue';
 
     
 }
+.itemHover__button:active{
+    background-color: rgba(255, 255, 255, 1.0); 
+    border: 1px solid rgba(254, 44, 85, 1.0);
+        
+}
+.itemHover__button-follow:active{
+    color: rgba(254, 44, 85, 1.0);
+}
 
 /* itemHover */
 
