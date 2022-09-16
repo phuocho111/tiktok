@@ -51,8 +51,8 @@
 
              <div class="suggested"  >
                  <p class="suggested__text">Suggested accounts</p>
-                 <div   v-for="(item, index) in commentsToShow" :key="index"  @mouseover="handleMouseOver(index)" @mouseleave="handleMouseOut(index)">
-                 <div class="d-flex justify-start align-center py-2 hover suggested__form"  v-if="index < allData.length" >
+                 <div   v-for="(item, index) in commentsToShow" :key="index"  >
+                 <div class="d-flex justify-start align-center py-2 hover suggested__form" @mouseover="handleMouseOver(index)" @mouseleave="handleMouseOut(index)"  v-if="index < allData.length" >
                     <img :src="allData[index].image" alt="" class="rounded-circle mx-4"  width="32" style="object-fit: cover;" />
                     <span>
                     <h4 class="suggested__name">{{allData[index].userId}}</h4>
@@ -243,9 +243,11 @@ import ButtonScroll from './ButtonScroll.vue';
        
     },
     handleMouseOut(index){
+       setTimeout(() => {
         let itemHover = this.allData[index]
          this.hidden = true
          return itemHover
+       }, 1000);
     },
     handleSee( see ){
         if(see == "see all"){

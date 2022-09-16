@@ -21,6 +21,7 @@ const mutations = {
   setMenu:(state,menu) =>(state.menu = menu)
 }
 const actions = {
+  
   async fetchData({commit}){
     const response = await (await fetch("http://localhost:3000/user")).json();
   

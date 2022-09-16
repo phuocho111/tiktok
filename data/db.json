@@ -112,8 +112,7 @@
     "id":2,
     "icon":"mdi-help-circle-outline",
     "childrent": {
-      "to":"/feedback",
-      "title":"Feedback"
+      "to":"/feedback"
     }
   },
   {
@@ -121,8 +120,7 @@
     "id":3,
     "icon":"mdi-keyboard-outline",
     "childrent": {
-      "to":"/keyboard",
-      "title":"Keyboard"
+      "key":"Keyboard shortcuts"
     }
   }
   ],
