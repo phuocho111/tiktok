@@ -1,7 +1,7 @@
 <template>
   <v-container >
   
-    <v-row class="align-center justify-center" style="box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);position: fixed;width: 80%;align-items: center; background: rgba(255, 255, 255, 1.0);z-index: 1000;" >
+    <v-row class="align-center justify-center" style=" position: fixed;width: 80%;align-items: center; background: rgba(255, 255, 255, 1.0);z-index: 1000;" >
       <v-col cols="3" class="">
         <!-- icon tiktok -->
         <a href="/home">
@@ -182,9 +182,11 @@
       </v-col>
     </v-row>
     <v-row >
+      <div style="border-bottom: 1px solid  rgb(0 0 0 / 12%);width: 100%; position: fixed; top: 70px; "></div>
       </v-row>
+
        <!-- menu -->
-        
+       
         
 
 

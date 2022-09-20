@@ -33,7 +33,20 @@ const routes = [
     name:'LiveTiktok',
     icon:"mdi-video-check-outline",
     component:()=>(import('../components/LiveTiktok.vue'))
-  }
+  },
+  {
+    path:'/:userId',
+    name:'userTiktok',
+    icon:"mdi-video-check-outline", 
+    component:()=>(import('../components/userTiktok.vue'))
+  },
+  {
+    path:'/*:userId',
+    name:'NotFound',
+    component: ()=>(import('../components/NotFound.vue')),
+    
+ },
+  
 ]
 
 const router = new VueRouter({

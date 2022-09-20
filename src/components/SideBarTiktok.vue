@@ -12,7 +12,8 @@
 
 
                     <!-- Sidebar route -->
-                <div class="pa-3 hover" v-for="item in route" :key="item.name " >
+                
+                    <div class="pa-3 hover" v-for="item in route" :key="item.name " >
                     
                     <router-link :to="{path: item.to}" 
                     class="sidebar__route"
@@ -24,7 +25,6 @@
                     <p class="ma-0 ml-2">{{item.name}}</p>
                     </router-link>
                 </div>
-                
                 <v-spacer style="border:1px solid  rgba(22, 24, 35, .12)"></v-spacer>
                   
             <!-- Sidebar route -->
@@ -174,8 +174,10 @@ import 'material-icons/iconfont/material-icons.css';
 import { mapActions,mapGetters } from 'vuex';
 import ButtonScroll from './ButtonScroll.vue';
 
+
+
    export default{
-    components:{ ButtonScroll },
+    components:{  ButtonScroll},
      data(){
         return{
             route:[
