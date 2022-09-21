@@ -91,7 +91,7 @@
     <!-- User page -->
     </div>
     <!-- Not Found -->
-        <div v-else><h1>Not Found</h1></div>
+        <div v-else><h1 class="mt-8">Not Found</h1></div>
     <!-- Not Found -->
     
 </template>
@@ -388,8 +388,6 @@
     gap: 24px 16px;
     grid-template-columns: repeat(auto-fill, minmax(184px, 1fr));
 }
-.userMain-body-item__video{
 
-}
 /* Layout Main */
 </style>

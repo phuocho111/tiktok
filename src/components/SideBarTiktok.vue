@@ -491,7 +491,7 @@ import ButtonScroll from './ButtonScroll.vue';
      z-index: 100;
      width: 300px;
      box-sizing: border-box;
-     
+     cursor: pointer;
      
 }
 .itemHover{

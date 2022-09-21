@@ -53,7 +53,7 @@
         v-if="userSearch">
         Accounts
         </div>
-        <div  v-for="item in userSearch" :key="item.userId">
+        <div  v-for="item in userSearch" :key="item.userId" @click="searchUser(item)">
           
           <div class="d-flex justify-start align-start py-2" >
             <img :src="item.image" alt="" class="rounded-circle mx-4"  width="40" />
@@ -205,7 +205,7 @@
 <script>
 import 'material-icons/iconfont/material-icons.css';
 import { mapActions,mapGetters } from 'vuex';
-import router from '@/router';
+
 export default {
   data() {
     return {
@@ -251,19 +251,14 @@ export default {
           console.log(languages)
           this.on = false
           this.keyboard = false
-          if(this.language.to){
-            
-            return router.push('/feedback')
-            
-          }
-            return this.language = languages  
-          }else{
-            console.log(list)
-          }
+          
 
-         
-          
-          
+          this.language = languages  
+          // change router feedback
+          if(this.language.to){
+            this.$router.push(this.language.to)
+          }
+          }
           
     },
     onTrue(){
@@ -271,7 +266,12 @@ export default {
     },
     closeKeyboard(){
       this.keyboard = true
+    },
+    searchUser(item){
+      this.$router.push(item.userId)
+      this.search = ""
     }
+
   },
   
   computed: {

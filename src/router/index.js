@@ -23,6 +23,12 @@ const routes = [
     
   },
   {
+    path:'/feedback',
+    name:'feedback',
+    icon:"mdi-video-check-outline",
+    component:()=>(import('../components/feedbackTiktok.vue'))
+ },
+  {
     path:'/following',
     name:'FollowingTiktok',
     icon:"mdi-account-supervisor-outline",
@@ -40,12 +46,15 @@ const routes = [
     icon:"mdi-video-check-outline", 
     component:()=>(import('../components/userTiktok.vue'))
   },
+  
+
   {
-    path:'/*:userId',
+    path:'/:catchAll(.*)',
     name:'NotFound',
     component: ()=>(import('../components/NotFound.vue')),
     
  },
+ 
   
 ]
 
