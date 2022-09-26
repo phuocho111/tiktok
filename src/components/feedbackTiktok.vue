@@ -55,7 +55,15 @@
         <!-- feedback footer -->
     <div class="feedback-footer">
         <div class="feedback-footer-container">
-
+            <div class="feedback-footer-wrapper">
+                <p class="feedback-footer-wrapper__pTitle">Tải về ngay</p>
+                <div class="feedback-footer-wrapper__brand">
+                    <a href="#" class="feedback-footer-wrapper__icon">
+                        <img src="https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/mtact/static/images/share/video/ic-qrcode.svg" class="tiktok-16zi48v-ImgQRCode e8cpz266">
+                        <span>QR CODE</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
         <!-- feedback footer -->
@@ -220,6 +228,63 @@ import { mapActions, mapGetters } from 'vuex';
     border-bottom: 1px solid #979797;
     -webkit-transition: all .3s cubic-bezier;
     transition: all .3s cubic-bezier;
+}
+.feedback-footer-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-align: center;
+}
+.feedback-footer-wrapper__pTitle{
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+.feedback-footer-wrapper__brand{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+
+}
+.feedback-footer-wrapper__icon{
+    margin: 0 4px;
+    width: 170px;
+    height: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 1);
+    font-family: "IBM Plex Sans",SofiaPro,Arial,Tahoma,PingFangSC,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+}
+.feedback-footer-wrapper__icon span{
+    color: #161823;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    padding-left: 10px;
+    transition: all 0.5s;
+}
+.feedback-footer-wrapper__icon span:hover{
+    color: rgba(255, 255, 255, 1);
 }
 /* feedback footer */
 </style>
