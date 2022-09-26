@@ -186,6 +186,49 @@
       "title":"Thằng Hầu (Thái Hoàng Remix) [Short Versi...",
       "icon":"mdi-music"
     }
+  ],
+
+  "feedback":[
+    {
+      "title":"Đề xuất",
+      "icon":""
+    },
+    {
+      "title":"Tài khoản & Cài đặt",
+      "icon":"mdi-chevron-right"
+    },
+    {
+      "title":"Đề xuất/Tìm kiếm/Chia sẻ/Nhúng",
+      "icon":"mdi-chevron-right"
+    },
+    {
+      "title":"Video và Âm thanh",
+      "icon":"mdi-chevron-right"
+    },
+    {
+      "title":"Theo dõi/Thích/Bình luận",
+      "icon":"mdi-chevron-right"
+    },
+    {
+      "title":"Thông báo/tin nhắn",
+      "icon":"mdi-chevron-right"
+    },
+    {
+      "title":"LIVE",
+      "icon":"mdi-chevron-right"
+    },
+    {
+      "title":"Báo cáo lạm dụng",
+      "icon":"mdi-chevron-right"
+    },
+    {
+      "title":"Số dư TikTok",
+      "icon":"mdi-chevron-right"
+    },
+    {
+      "title":"Không phản hồi/Giật lag/Khác",
+      "icon":"mdi-chevron-right"
+    }
   ]
   
 

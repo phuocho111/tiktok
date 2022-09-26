@@ -8,17 +8,20 @@ Vue.use(Vuex)
 const state = {
    data:[],
    discover:[],
-   menu:[]
+   menu:[],
+   feedback:[]
 }
 const getters = {
   allData:(state) => state.data,
   allDiscover:(state) => state.discover,
-  allMenu:(state)=>state.menu
+  allMenu:(state)=>state.menu,
+  allFeedback:(state)=> state.feedback
 }
 const mutations = {
   setData:(state, data) =>(state.data = data),
   setDiscover:(state,discover) =>(state.discover = discover),
-  setMenu:(state,menu) =>(state.menu = menu)
+  setMenu:(state,menu) =>(state.menu = menu),
+  setFeedback:(state,feedback)=>(state.feedback = feedback)
 }
 const actions = {
   
@@ -34,6 +37,10 @@ const actions = {
   async fetchMenu({commit}){
     const menu = await(await fetch('http://localhost:3000/menu_item')).json();
     commit('setMenu',menu)
+  },
+  async fetchFeedback({commit}){
+    const feedback = await(await fetch('http://localhost:3000/feedback')).json();
+    commit('setFeedback',feedback)
   }
   
 }

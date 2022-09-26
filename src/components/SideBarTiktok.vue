@@ -2,9 +2,9 @@
 <template>
     <v-container >
         <v-row  >
-            <v-col cols="2"></v-col>
+           
             <!-- Sidebar route -->
-            <v-col cols="3 ">
+           
                 
             <div class="out-sidebar styleScroll"  >
                 <div class="in-sidebar" >
@@ -52,8 +52,8 @@
              <div class="suggested"  >
                  <p class="suggested__text">Suggested accounts</p>
                  <div   v-for="(item, index) in commentsToShow" :key="index"  >
-                 <div class="d-flex justify-start align-center py-2 hover suggested__form" @mouseover="handleMouseOver(index)" @mouseleave="handleMouseOut(index)"  v-if="index < allData.length" >
-                    <img :src="allData[index].image" alt="" class="rounded-circle mx-4"  width="32" style="object-fit: cover;" />
+                 <div class="d-flex justify-start align-center py-2 hover suggested__form" @mouseover="handleMouseOver(index)" @mouseleave="handleMouseOut(index)"  @click="searchUser(index)" v-if="index < allData.length" >
+                    <img :src="allData[index].image" alt="" class="rounded-circle mx-4"  width="32" style="object-fit: cover;"   />
                     <span>
                     <h4 class="suggested__name">{{allData[index].userId}}</h4>
                     <p class="suggested__status" >{{allData[index].status}}</p>
@@ -148,12 +148,14 @@
               
 
             </div>
-            </v-col>
+           
 
             <!-- Route -->
-            <v-col cols="6" class="px-0">
-               <router-view ></router-view> 
-            </v-col>
+                <div class="route-content">
+                    <router-view ></router-view> 
+                </div>
+               
+          
             <!-- Route -->
             
 
@@ -204,6 +206,7 @@ import ButtonScroll from './ButtonScroll.vue';
             isActive:true,
             itemHover:{},
             see:[],
+            scroll: ""
             
             
             
@@ -249,7 +252,7 @@ import ButtonScroll from './ButtonScroll.vue';
         let itemHover = this.allData[index]
          this.hidden = true
          return itemHover
-       }, 1000);
+       }, 500);
     },
     handleSee( see ){
         if(see == "see all"){
@@ -262,14 +265,21 @@ import ButtonScroll from './ButtonScroll.vue';
             
         }
     },
-    
+    searchUser(index){
+      this.$router.push(this.allData[index].userId)
+    //   console.log(this.allData[index].userId)
+      
+     
+    }
     
   },
-  computed: {...mapGetters(['allData','allDiscover'])
-        }
+  computed: {
+    ...mapGetters(['allData','allDiscover'])
   
-    
+  
+    },
    }
+   
 </script>
 <style  scoped>
 
@@ -321,12 +331,23 @@ import ButtonScroll from './ButtonScroll.vue';
     
 }
 
+
 /* scroll style */
 
 
-
-
+/*  */
+.route-content{
+    position: absolute;
+    top: 50px;
+    left: 45%;
+}
+/*  */
 /* sidebar route */
+.out-sidebar {
+    position: fixed;
+    top: 40px;
+    left: 20%;
+}
 .sidebar__icon{
     font-size: 24px;
     margin-right: 8px;

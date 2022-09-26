@@ -1,7 +1,7 @@
 <template>
-  <v-container >
+  <v-container style=" position: fixed;width: 100%;align-items: center; background: rgba(255, 255, 255, 1.0);z-index: 1000;" >
   
-    <v-row class="align-center justify-center" style=" position: fixed;width: 80%;align-items: center; background: rgba(255, 255, 255, 1.0);z-index: 1000;" >
+    <v-row class="align-center justify-center" >
       <v-col cols="3" class="">
         <!-- icon tiktok -->
         <a href="/home">
@@ -99,7 +99,7 @@
                 style="border-style:none; height: 40px;cursor: pointer;"
                 @mouseover="handleMouseOver" @mouseleave="handleMouseOut"> 
               <v-icon >mdi-dots-vertical</v-icon>
-                <div :hidden="hidden" style="position:absolute; right:0; top:40px; padding-top: 10px;  background-color:white"  >
+                <div :hidden="hidden" style="position:absolute; right:0; top:40px; padding-top: 10px;  background-color:white; z-index: 1002;"  >
                 <div 
                 v-for="list in allMenu" :key="list.id"
                 class="d-flex flex-column   " 
@@ -113,7 +113,7 @@
               
 
               <!-- languages -->
-              <div :hidden="hidden" v-if="language.title"   style="position:absolute; right:0; top:40px;  background-color:white"  >
+              <div :hidden="hidden" v-if="language.title"   style="position:absolute; right:0; top:40px;  background-color:white; z-index: 1002;"  >
                 <div 
                 class="d-flex flex-column " >
                   <div class=" language" :hidden="on"  >
@@ -180,10 +180,10 @@
         </v-btn-toggle>
         </div>
       </v-col>
-    </v-row>
-    <v-row >
       <div style="border-bottom: 1px solid  rgb(0 0 0 / 12%);width: 100%; position: fixed; top: 70px; "></div>
-      </v-row>
+    </v-row>
+    
+  
 
        <!-- menu -->
        

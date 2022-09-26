@@ -32,7 +32,7 @@
     </div>
     
 
-    <!--  -->
+    <!-- Get tiktok app hidden -->
     <div class="codeQR" :hidden="codeQr" >
       <section class="codeQR-container">
         <div class="codeQR-header">
@@ -41,7 +41,7 @@
             </div>
             <p class="codeQR-header__title">Get the TikTok app</p>
             
-
+        
         </div>
         <div class="codeQR-body">
             <div class="codeQR-content">
@@ -76,7 +76,7 @@
         </div>
       </section>
     </div>
-    <!--  -->
+    <!-- Get tiktok app hidden  -->
 </div>
 </template>
 <script>
