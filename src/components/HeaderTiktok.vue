@@ -99,7 +99,7 @@
                 style="border-style:none; height: 40px;cursor: pointer;"
                 @mouseover="handleMouseOver" @mouseleave="handleMouseOut"> 
               <v-icon >mdi-dots-vertical</v-icon>
-                <div :hidden="hidden" style="position:absolute; right:0; top:40px; padding-top: 10px;  background-color:white; z-index: 1002;"  >
+                <div :hidden="hidden" style="position:absolute; right:0; top:40px; padding-top: 10px;  background-color:white; "  >
                 <div 
                 v-for="list in allMenu" :key="list.id"
                 class="d-flex flex-column   " 
